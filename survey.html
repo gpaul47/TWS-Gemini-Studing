@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитування</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <form action="" method="POST">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="user_name" placeholder="Введіть ваше ім'я" required>
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="user_email" placeholder="приклад@email.com" required>
+
+                <fieldset>
+                    <legend>Ваша стать:</legend>
+                    <input checked type="radio" name="gender" value="Чоловік" required>
+                    <label for="man">Чоловік</label>
+                    <input type="radio" name="gender" value="Жінка" required>
+                    <label for="famely">Жінка</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Улюблені мови програмування:</legend>
+                    <input type="checkbox" name="lang[]" value="HTML" id="lang1" required>
+                    <label for="lang1">HTML</label>
+                    <input type="checkbox" name="lang[]" value="CSS" id="lang2" required>
+                    <label for="lang2">CSS</label>
+                    <input type="checkbox" name="lang[]" value="JavaScript" id="lang3" required>
+                    <label for="lang3">JavaScript</label>
+                    <input type="checkbox" name="lang[]" value="Python" id="lang4" required>
+                    <label for="lang4">Python</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend for="experience">Ваш рівень досвіду:</legend>
+                    <select name="experience" id="experience_level" required></select>
+                    <option value="Початківець" selected>Початківець</option>
+                    <option value="Середній">Середній</option>
+                    <option value="Досвідчений">Досвідчений</option>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend for="comments">Ваші коментарі:</legend>
+                    <textarea id="comments" name="comments" rows="3" placeholder="Ваші коментарі..."
+                        required></textarea>
+                    <button type="submit">Відправити опитування</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>

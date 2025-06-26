@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box; /* Встановлюємо box-sizing для всіх елементів */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Змінюємо шрифт на всій сторінці */
+  background-color: #e2e2e2; /* Світло-сірий фон для сторінки */
+  color: #333; /* Темно-сірий колір тексту */
+  margin: 0; /* Прибираємо стандартні відступи від країв */
+  padding: 20px; /* Внутрішній відступ для body */
+}
+header {
+  background-color: #3f51b5; /* Синій фон для header */
+  color: white; /* Білий колір тексту для header */
+  text-align: center; /* Центруємо текст у header */
+  padding: 20px; /* Внутрішній відступ для header */
+  margin-bottom: 20px; /* Відступ знизу для header */
+}
+main {
+  max-width: 960px; /* Максимальна ширина для основного контенту */
+  margin: 20px auto; /* Центруємо основний контент */
+}
+section {
+  background-color: white;
+  padding: 25px; /* Внутрішній відступ для секцій */
+  margin-bottom: 20px; /* Відступ знизу для секцій */
+  border-radius: 10px; /* Закруглені кути для секцій */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для секцій */
+}
+
+h1 {
+  font-size: 3em; /* Розмір шрифту для заголовка h1 */
+  margin-bottom: 10px; /* Відступ знизу для заголовка h1 */
+}
+h2 {
+  color: #4a148c; /* Темно-фіолетовий колір для заголовків h2 */
+  margin-bottom: 15px; /* Відступ знизу для заголовків h2 */
+}
+
+img {
+  display: block; /* Зображення будуть блочними елементами */
+  margin: 15px auto; /* Вирівнювання зображень по центру */
+  border-radius: 50%; /* Закруглені кути для зображень */
+  border: 3px solid #3f51b5; /* Синя рамка для зображень */
+}
+
+ul {
+  list-style-type: none; /* Прибираємо стандартні маркери списку */
+  padding: 0; /* Прибираємо стандартні відступи */
+}
+
+a {
+  color: #007bff; /* Синій колір для посилань */
+  text-decoration: none; /* Прибираємо підкреслення посилань */
+  a:hover {
+    text-decoration: underline;
+  } /* Додаємо підкреслення при наведенні */
+}
+
+footer {
+  text-align: center;
+  padding: 15px; /* Внутрішній відступ для footer */
+  background-color: #333; /* Темний фон для footer */
+  color: white; /* Білий колір тексту для footer */
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding: 10px; /* Зменшуємо внутрішній відступ для мобільних пристроїв */
+  }
+  section {
+    padding: 15px; /* Зменшуємо внутрішній відступ для секцій на мобільних пристроях */
+  }
+  h1 {
+    font-size: 2em; /* Зменшуємо розмір шрифту заголовка h1 на мобільних пристроях */
+  }
+  img {
+    width: 100px; /* Зменшуємо розмір зображень на мобільних пристроях */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 5px; /* Зменшуємо внутрішній відступ для мобільних пристроїв */
+  }
+  section {
+    padding: 15px; /* Зменшуємо внутрішній відступ для секцій на мобільних пристроях */
+  }
+  h1 {
+    font-size: 1.5em; /* Зменшуємо розмір шрифту заголовка h1 на мобільних пристроях */
+    font-weight: bold; /* Зробимо заголовок жирним */
+  }
+}

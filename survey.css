@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Змінюємо шрифт на Arial */
+  background-color: #e0f7fa; /* Світло-сірий фон для сторінки */
+  color: #333; /* Темно-сірий колір тексту */
+  margin: 0; /* Прибираємо стандартні відступи від країв */
+  padding: 20px; /* Внутрішній відступ для body */
+}
+
+h1 {
+  text-align: center; /* Центруємо заголовок h1 */
+  color: #00796b; /* Темно-зелений колір для заголовка h1 */
+  margin-bottom: 30px; /* Відступ знизу для заголовка h1 */
+}
+
+form {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+fieldset {
+  border: 1px solid #b0bec5;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #00796b;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+fieldset label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  display: block; /* Робимо кнопку блочним елементом */
+  width: 100%; /* Ширина 100% для кнопки */
+  padding: 15px; /* Внутрішній відступ для кнопки */
+  background-color: #007bff; /* Синій фон для кнопки */
+  color: white; /* Білий колір тексту для кнопки */
+  border: none; /* Прибираємо стандартну рамку */
+  border-radius: 5px; /* Закруглені кути для кнопки */
+  font-size: 18px; /* Розмір шрифту для кнопки */
+  cursor: pointer; /* Змінюємо курсор на pointer при наведенні */
+  transition: background-color 0.3s ease; /* Плавний перехід для фону кнопки */
+  &:hover {
+    background-color: #00796b;
+  } /* Темніший синій при наведенні */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff; /* Змінюємо колір рамки при фокусі */
+  box-shadow: 0 0 5px rgba(0, 123, 155, 0.5); /* Додаємо тінь при фокусі */
+  outline: none; /* Прибираємо стандартний контур при фокусі */
+}
+
+input:invalid:not(:focus) {
+  border-color: red; /* Червона рамка для некоректних полів */
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  color: #00796b; /* Змінюємо колір тексту для вибраних опцій */
+  font-weight: bold;
+}
